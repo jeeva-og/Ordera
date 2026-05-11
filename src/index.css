@@ -1,0 +1,19 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora', 'Segoe UI', system-ui, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
