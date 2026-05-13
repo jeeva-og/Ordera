@@ -1,13 +1,16 @@
-import { Layout, Menu } from 'antd';
-import 'antd/dist/reset.css'; // make sure this is imported
-import LoginPage from './pages/LoginPage';
+// src/App.jsx
+import { BrowserRouter } from "react-router-dom";
+import { ConfigProvider } from "antd";
+import { antdTheme } from "./theme/antdTheme";
+import AppRouter from "./routes/appRouter";
+import "antd/dist/reset.css";
 
-const { Header, Sider, Content } = Layout;
-
-function App() {
+export default function App() {
   return (
-    <LoginPage/>
+    <BrowserRouter>
+      <ConfigProvider theme={antdTheme}>
+        <AppRouter />
+      </ConfigProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;
